@@ -4,11 +4,10 @@
   "main": "server.js",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "dev:webpack": "next dev --webpack",
+    "dev": "next dev --webpack",
     "build": "next build --webpack",
-    "start": "next start -p ${PORT:-20010}",
-    "start:server": "node server.js",
+    "start": "next start",
+    "postinstall": "npm run build",
     "lint": "eslint"
   },
   "dependencies": {
