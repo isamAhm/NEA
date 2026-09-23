@@ -63,8 +63,8 @@
   --color-cta-hover: var(--color-cta-hover);
   --color-cta-contrast: var(--color-cta-contrast);
 
-  --font-heading: var(--font-fredoka);
-  --font-body: var(--font-nunito);
+  --font-heading: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 html {
@@ -114,11 +114,13 @@ h4 {
 }
 
 @keyframes hero-sparkle-twinkle {
+
   0%,
   100% {
     opacity: 0.75;
     transform: translateY(0) scale(0.92);
   }
+
   50% {
     opacity: 1;
     transform: translateY(-4px) scale(1.06);
@@ -149,6 +151,7 @@ h4 {
     opacity: 0;
     transform: translateY(12px);
   }
+
   to {
     opacity: 1;
     transform: none;
@@ -181,6 +184,7 @@ h4 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .reveal,
   .reveal-left,
   .reveal-right {

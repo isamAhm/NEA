@@ -1,12 +1,14 @@
 {
-  "name": "kiro",
+  "name": "new-era-academy",
   "version": "0.1.0",
-  "main": "next.config.ts",
+  "main": "server.js",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "next dev",
+    "dev:webpack": "next dev --webpack",
     "build": "next build --webpack",
-    "start": "next start",
+    "start": "node server.js",
+    "start:next": "next start -p ${PORT:-20010}",
     "lint": "eslint"
   },
   "dependencies": {
