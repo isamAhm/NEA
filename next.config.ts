@@ -3,8 +3,6 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Allow the preview domain for development
   allowedDevOrigins: ["rb1ttjanjn.preview.c24.airoapp.ai"],
-  // Use standalone output for better hosting compatibility
-  output: 'standalone',
   // Optimize for production
   compress: true,
   // Handle trailing slashes consistently
